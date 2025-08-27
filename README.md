@@ -12,9 +12,8 @@
 
 <br>
 
-<div align="center">
-<img src="https://i.imgur.com/gK1N42i.png" alt="Sample annotated video frame" width="600">
-</div>
+<img width="1908" height="910" alt="image" src="https://github.com/user-attachments/assets/6fdda3c1-24d2-4931-bf62-283ade8c65d7" />
+
 
 <br>
 
