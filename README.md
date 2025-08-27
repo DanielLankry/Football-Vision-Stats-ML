@@ -1,40 +1,40 @@
-\<div id="top"\>
+<div id="top">
 
-\<div align="center"\>
+<div align="center">
 
 # Football-Vision-Stats
 
-\<em\>A computer vision project for football analytics, using object detection, tracking, and team color clustering to analyze video footage.\</em\>
+<em>A computer vision project for football analytics, using object detection, tracking, and team color clustering to analyze video footage.</em>
 
-\<br\>
+<br>
 
-\</div\>
+</div>
 
-\<br\>
+<br>
 
-\<div align="center"\>
-\<img src="[https://i.imgur.com/gK1N42i.png](https://www.google.com/search?q=https://i.imgur.com/gK1N42i.png)" alt="Sample annotated video frame" width="600"\>
-\</div\>
+<div align="center">
+<img src="https://i.imgur.com/gK1N42i.png" alt="Sample annotated video frame" width="600">
+</div>
 
-\<br\>
+<br>
 
 -----
 
 ## 📄 Table of Contents
 
-  - [Overview](https://www.google.com/search?q=%23overview)
-  - [Features](https://www.google.com/search?q=%23features)
-  - [Getting Started](https://www.google.com/search?q=%23getting-started)
-      - [Prerequisites](https://www.google.com/search?q=%23prerequisites)
-      - [Installation](https://www.google.com/search?q=%23installation)
-  - [Usage](https://www.google.com/search?q=%23usage)
-  - [Algorithm Explanation](https://www.google.com/search?q=%23algorithm-explanation)
-  - [Project Structure](https://www.google.com/search?q=%23project-structure)
-  - [Contributing](https://www.google.com/search?q=%23contributing)
-  - [License](https://www.google.com/search?q=%23license)
-  - [Contact](https://www.google.com/search?q=%23contact)
-  - [Acknowledgments](https://www.google.com/search?q=%23acknowledgments)
-  - [Back to Top](https://www.google.com/search?q=%23back-to-top)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+      - [Prerequisites](#prerequisites)
+      - [Installation](#installation)
+  - [Usage](#usage)
+  - [Algorithm Explanation](#algorithm-explanation)
+  - [Project Structure](#project-structure)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Contact](#contact)
+  - [Acknowledgments](#acknowledgments)
+  - [Back to Top](#back-to-top)
 
 -----
 
@@ -108,8 +108,6 @@ Ensure you have Python 3.8 or a later version installed. The project also relies
       - Create a `.env` file in the root directory.
       - Add your GitHub repository link to the `.env` file to enable cloning within Google Colab (if you choose to use it for training).
 
-    <!-- end list -->
-
     ```env
     # .env
     GITHUB_REPO_LINK_FOOTBALL_VISION_STATS="YOUR_REPO_LINK"
@@ -129,20 +127,21 @@ The project is designed to be run as a Jupyter notebook. Execute the cells in or
 2.  **Run the cells sequentially**:
 
       - The first few cells handle package installation and imports.
-      - The **"Exacute the cells and instractions with this Header if you want to train on Google Colab"** section contains instructions and cells for setting up and training the model in a Google Colab environment. This step is optional if you are using a pre-trained model.
-      - The **"Quick Model Capabilites AFTER training"** cell demonstrates the model's ability to detect and track objects on a single frame.
+      - The **"Execute the cells and instructions with this Header if you want to train on Google Colab"** section contains instructions and cells for setting up and training the model in a Google Colab environment. This step is optional if you are using a pre-trained model.
+      - The **"Quick Model Capabilities AFTER training"** cell demonstrates the model's ability to detect and track objects on a single frame.
 
-    \<div align="center"\>
-    \!    \</div\>
+    <div align="center">
+    <img src="https://i.imgur.com/37V0j9o.png" alt="Visual representation of perspective transformation on the court" width="600">
+    </div>
 
       - The **"Features Time"** section contains the core logic for the analysis.
       - Cells in the **"Reading and Saving Video"** section read the raw video and save a copy.
       - Cells under **"Tracking bounding boxes"** use the trained model to detect objects in the video frames and track them.
-      - The **"Team Color seprating"** section uses K-means clustering to assign team colors to players.
-      - The **"Now Were going to work on ball detaction"** section includes logic to interpolate missing ball positions for smoother tracking.
+      - The **"Team Color separating"** section uses K-means clustering to assign team colors to players.
+      - The **"Now We're going to work on ball detection"** section includes logic to interpolate missing ball positions for smoother tracking.
       - The final cells handle camera movement, perspective correction, and calculating speed and distance.
 
-    \<br\>
+    <br>
 
     You may need to modify file paths in the notebook to match your local setup or specific video files.
 
@@ -157,8 +156,8 @@ The project uses **K-means clustering** to determine team colors. Instead of ana
 $$J = \sum_{i=1}^{n} \sum_{j=1}^{k} \|x_i^{(j)} - c_j\|^2$$
 
   * $J$: The objective function to minimize (sum of squared distances).
-  * $x\_i$: A pixel's color value.
-  * $c\_j$: The centroid of cluster $j$.
+  * $x_i$: A pixel's color value.
+  * $c_j$: The centroid of cluster $j$.
   * $k$: The number of clusters (set to 2 for the two teams).
 
 ### Camera Movement and Perspective Correction
@@ -169,11 +168,11 @@ To accurately calculate player speed and distance, the project accounts for came
 2.  **Perspective Transformation**: A 4x4 homography matrix is calculated using the four corners of the tennis court. This matrix transforms pixel coordinates `(x, y)` to real-world coordinates `(X, Y)`.
 3.  **Adjusted Positions**: Each player's pixel position is first adjusted for the camera movement and then transformed using the homography matrix to get their position in meters on the court.
 
-\<div align="center"\>
-\<img src="[https://i.imgur.com/37V0j9o.png](https://www.google.com/search?q=https://i.imgur.com/37V0j9o.png)" alt="Visual representation of perspective transformation on the court" width="600"\>
-\</div\>
+<div align="center">
+<img src="https://i.imgur.com/37V0j9o.png" alt="Visual representation of perspective transformation on the court" width="600">
+</div>
 
-## \<br\>
+<br>
 
 ## 📁 Project Structure
 
@@ -200,7 +199,7 @@ To accurately calculate player speed and distance, the project accounts for came
 
 ## 🤝 Contributing
 
-We welcome contributions to this project\! Here’s how you can help:
+We welcome contributions to this project! Here's how you can help:
 
 1.  **Fork the repository**.
 2.  **Create a new branch**: `git checkout -b feature/your-feature-name`.
@@ -226,7 +225,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 ## 📞 Contact
 
   - **Project Maintainer**: Your Name
-  - **Project Link**: [https://github.com/lankdaniel14/Football-Vision-Stats-ML](https://www.google.com/search?q=https://github.com/lankdaniel14/Football-Vision-Stats-ML)
+  - **Project Link**: [https://github.com/lankdaniel14/Football-Vision-Stats-ML](https://github.com/lankdaniel14/Football-Vision-Stats-ML)
 
 -----
 
@@ -237,9 +236,10 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
   - **OpenCV**: The foundation for all video and image processing in this project.
   - **Jupyter**: The environment that makes this project easy to run and share.
 
-\<div align="center"\>
+<div align="center">
 
-\<br\>
-\<a href="\#top"\>⬆ Back to Top\</a\>
-\<br\>
-\</div\>
+<br>
+<a href="#top">⬆ Back to Top</a>
+<br>
+
+</div>
