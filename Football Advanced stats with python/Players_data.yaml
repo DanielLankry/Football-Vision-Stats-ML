@@ -1,0 +1,6 @@
+train: C:\Users\Daniel\Desktop\Files\Projects\Football Advanced stats with python\football-players-detection\train
+val: C:\Users\Daniel\Desktop\Files\Projects\Football Advanced stats with python\football-players-detection\valid
+test: C:\Users\Daniel\Desktop\Files\Projects\Football Advanced stats with python\football-players-detection\test
+
+nc: 4
+names: ['ball', 'goalkeeper', 'player', 'referee']
