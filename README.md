@@ -19,23 +19,6 @@
 
 -----
 
-## 📄 Table of Contents
-
-  - [Overview](#overview)
-  - [Features](#features)
-  - [Getting Started](#getting-started)
-      - [Prerequisites](#prerequisites)
-      - [Installation](#installation)
-  - [Usage](#usage)
-  - [Algorithm Explanation](#algorithm-explanation)
-  - [Project Structure](#project-structure)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Contact](#contact)
-  - [Acknowledgments](#acknowledgments)
-  - [Back to Top](#back-to-top)
-
------
 
 ## ✨ Overview
 
