@@ -112,9 +112,7 @@ The project is designed to be run as a Jupyter notebook. Execute the cells in or
       - The **"Execute the cells and instructions with this Header if you want to train on Google Colab"** section contains instructions and cells for setting up and training the model in a Google Colab environment. This step is optional if you are using a pre-trained model.
       - The **"Quick Model Capabilities AFTER training"** cell demonstrates the model's ability to detect and track objects on a single frame.
 
-    <div align="center">
-    <img src="https://i.imgur.com/37V0j9o.png" alt="Visual representation of perspective transformation on the court" width="600">
-    </div>
+
 
       - The **"Features Time"** section contains the core logic for the analysis.
       - Cells in the **"Reading and Saving Video"** section read the raw video and save a copy.
@@ -150,9 +148,6 @@ To accurately calculate player speed and distance, the project accounts for came
 2.  **Perspective Transformation**: A 4x4 homography matrix is calculated using the four corners of the tennis court. This matrix transforms pixel coordinates `(x, y)` to real-world coordinates `(X, Y)`.
 3.  **Adjusted Positions**: Each player's pixel position is first adjusted for the camera movement and then transformed using the homography matrix to get their position in meters on the court.
 
-<div align="center">
-<img src="https://i.imgur.com/37V0j9o.png" alt="Visual representation of perspective transformation on the court" width="600">
-</div>
 
 <br>
 
@@ -206,7 +201,6 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 ## 📞 Contact
 
-  - **Project Maintainer**: Your Name
   - **Project Link**: [https://github.com/lankdaniel14/Football-Vision-Stats-ML](https://github.com/lankdaniel14/Football-Vision-Stats-ML)
 
 -----
